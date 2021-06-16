@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    environment:
+      APP_CONFIG: "config.json"
+    volumes:
+    - ./config.json:/app/config.json
+    - ./output:/app/output
